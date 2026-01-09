@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard - Heart of Tomorrow</title>
-  <link rel="stylesheet" href="styles.css">
+<title>Finance Dashboard</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Admin Dashboard</h1>
-  <p>Admin login & expense tracking will appear here.</p>
-  <script src="app.js"></script>
+<h2> Heart of Tomorrow – Finance Dashboard</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Name</th>
+<th>Phone</th>
+<th>Amount (KES)</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="donations"></tbody>
+</table>
+<script>
+fetch('http://localhost:3000/donations')
+.then(res => res.json()) .then(data => {
+const tbody = document.getElementById('donations');
+data.forEach(d => {
+tbody.innerHTML += `
+ <tr>
+ <td>${d.date}</td>
+ <td>${d.name}</td>
+ <td>${d.phone}</td>
+ <td>${d.amount}</td>
+ <td>${d.status}</td>
+ </tr>`;
+});
+});
+</script>
 </body>
 </html>
