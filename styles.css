@@ -1,3 +1,4 @@
+/* ========== GLOBAL RESET ========== */
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +6,16 @@
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #f7f3fa;
+  background: #f8f6fb;
   color: #333;
 }
 
+/* ========== HEADER & NAVIGATION ========== */
 header {
-  background: #9c4dcc;
-  padding: 1rem;
+  background: #7b3fe4;
+  padding: 15px 20px;
 }
 
 .nav {
@@ -22,86 +24,157 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: #fff;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
+.logo img {
+  height: 42px;
+}
+
+/* NAV LINKS */
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 20px;
 }
 
-.nav a {
+.nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: opacity 0.3s;
 }
 
-.nav a.active {
-  border-bottom: 2px solid #fff;
+.nav ul li a:hover {
+  opacity: 0.8;
 }
 
+/* ========== HERO SECTION ========== */
 .hero {
-  text-align: center;
-  padding: 4rem 1rem;
   background: linear-gradient(
-    rgba(156, 77, 204, 0.85),
-    rgba(156, 77, 204, 0.85)
-  ),
-  url("images/food-drive-1.jpg") center/cover no-repeat;
-  color: white;
+      rgba(123, 63, 228, 0.85),
+      rgba(123, 63, 228, 0.85)
+    ),
+    url("images/food-drive-1.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  margin-top: 1rem;
+  max-width: 700px;
+  margin: auto;
   font-size: 1.1rem;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.7rem 1.6rem;
-  background: #ffffff;
-  color: #9c4dcc;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* ========== SECTIONS ========== */
 .section {
   max-width: 1100px;
   margin: auto;
-  padding: 2.5rem 1rem;
+  padding: 60px 20px;
 }
 
+.section h2,
+.section h1 {
+  text-align: center;
+  color: #7b3fe4;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+/* ========== GRID & CARDS ========== */
 .grid {
   display: grid;
-  gap: 1.2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 
 .card {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-footer {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
-  padding: 1.2rem;
-  background: #e6d8f3;
-  margin-top: 3rem;
 }
 
+.card h3 {
+  color: #7b3fe4;
+  margin-bottom: 10px;
+}
+
+/* ========== IMAGE GALLERY ========== */
+.gallery-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  display: inline-block;
+  background: #7b3fe4;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #5f2bc8;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #2c144d;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* ========== MOBILE RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
 
 
