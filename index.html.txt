@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart of Tomorrow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>❤️ Heart of Tomorrow Foundation</h1>
+  <p>Welcome to our official website.</p>
+  <a href="dashboard.html">Go to Dashboard</a>
+  <script src="app.js"></script>
+</body>
+</html>

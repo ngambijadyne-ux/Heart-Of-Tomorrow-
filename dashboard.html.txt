@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Heart of Tomorrow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <p>Admin login & expense tracking will appear here.</p>
+  <script src="app.js"></script>
+</body>
+</html>
