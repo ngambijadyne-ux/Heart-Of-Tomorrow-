@@ -14,5 +14,8 @@ document.getElementById('status').innerText = data.message;
 .catch(() => {
 document.getElementById('status').innerText = 'Error processing donation';
 });
-}
+}  // Reserved for future interactivity
+console.log("Heart of Tomorrow Foundation site loaded");
+
+
 
