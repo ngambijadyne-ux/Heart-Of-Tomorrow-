@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Heart of Tomorrow</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Heart of Tomorrow Foundation</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>❤️ Heart of Tomorrow Foundation</h1>
-  <p>Welcome to our official website.</p>
-  <a href="dashboard.html">Go to Dashboard</a>
-  <script src="app.js"></script>
+<header> <h1> Heart of Tomorrow Foundation</h1>
+<p>Building hope. Changing lives.</p>
+</header>
+<section class="donation-box">
+<h2>Make a Donation</h2>
+<input type="text" id="name" placeholder="Your Name" />
+<input type="tel" id="phone" placeholder="M-Pesa Phone (2547...)" />
+<input type="number" id="amount" placeholder="Amount (KES)" />
+<button onclick="donate()">Donate via M-Pesa</button>
+<p id="status"></p>
+</section>
+<script src="app.js"></script>
 </body>
 </html>
+
