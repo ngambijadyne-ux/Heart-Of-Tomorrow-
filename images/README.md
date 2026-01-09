@@ -1,2 +1,3 @@
-Image assets for Heart of Tomorrow Foundation
+<img src="images/HEART-OF-TOMORROW.png" alt="Heart of Tomorrow Logo">
+
 
